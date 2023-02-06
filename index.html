@@ -1,0 +1,54 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Synth</title>
+    <script src="input-knobs.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="piano">
+            <div id="control-panel">
+                <div id="controls">
+                    <div id="wave-selection">
+                        <h2>Wave-Type</h2>
+                        <select id="waveform-select">
+                            <option value="1">sine</option>
+                            <option value="2">square</option>
+                            <option value="3">sawtooth</option>
+                            <option value="4">triangle</option>
+                        </select>
+                        </div>
+                    <div id="master">
+                        <div>
+                            <h2>Volume</h2>
+                            <input  id= "volume-knob" type="range" class="input-knob" value="0"/>
+                        </div>
+                    </div>    
+                </div>
+                <div id="visuals">
+                    <canvas id = "canvas1" ></canvas>
+                </div>
+            </div>
+            <ul id="piano-note">
+                <li id = "key1" class="white"></li>
+                <li id = "key2" class="black"></li>
+                <li id = "key3" class="white"></li>
+                <li id = "key4" class="black"></li>
+                <li id = "key5" class="white"></li>
+                <li id ="key6" class="white"></li>
+                <li id = "key7" class="black"></li>
+                <li id = "key8" class="white"></li>
+                <li id = "key9" class="black"></li>
+                <li id = "key10" class="white"></li>
+                <li id = "key11" class="black"></li>
+                <li id = "key12" class="white"></li>
+                <li id = "key13" class="white"></li> 
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
